@@ -1,0 +1,6 @@
+kronnika
+rpa
+robotic process automation
+selenium
+docker
+python

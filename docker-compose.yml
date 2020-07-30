@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  hub:
+    image: selenium/hub
+    ports:
+      - 4444:4444
+
+  chrome:
+    image: selenium/node-chrome-debug
+    depends_on:
+      - hub
+    ports:
+      - 5900-5904:5900
+    environment:
+      - HUB_HOST=hub
